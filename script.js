@@ -1,13 +1,12 @@
-let crsr=document.querySelector('#cursor')
-let blur=document.querySelector('#cursor-blur')
+// var crsr = document.querySelector("#cursor");
+// var blur = document.querySelector("#cursor-blur");
 
-document.addEventListener("mousemove",function(dets){
-crsr.style.left=dets.x+"px"
-crsr.style.top=dets.y+"px"
-blur.style.left=dets.x-150+"px"
-blur.style.top=dets.y-150+"px"
-})
-
+// document.addEventListener("mousemove", function (dets) {
+//   crsr.style.left = dets.x + "px";
+//   crsr.style.top = dets.y + "px";
+//   blur.style.left = dets.x - 250 + "px";
+//   blur.style.top = dets.y - 250 + "px";
+// });
 
 
 
@@ -26,13 +25,14 @@ gsap.to('#nav',{
 })
 
 
-gsap.to('#main',{
-    backgroundColor:"#000",
-    scrollTrigger:{
-        trigger:"#main",
-        scroller:"body",
-        start:"top -30%",
-        end:"top -80%",
-        scrub:2
-    }
-})
+gsap.to("#main", {
+    backgroundColor: "#000",
+    scrollTrigger: {
+      trigger: "#main",
+      scroller: "body",
+      // markers: true,
+      start: "top -25%",
+      end: "top -70%",
+      scrub: 2,
+    },
+  });
